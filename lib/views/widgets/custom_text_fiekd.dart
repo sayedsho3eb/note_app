@@ -13,7 +13,7 @@ class CustomTextFieled extends StatelessWidget {
     return TextField(
       maxLines: maxLine,
       decoration: InputDecoration(
-        hintText: 'Title',
+        hintText: title,
 
         border: borderSide(),
         enabledBorder: borderSide(),
