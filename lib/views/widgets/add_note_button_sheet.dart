@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:noteapp/views/widgets/custom_button.dart';
 import 'package:noteapp/views/widgets/custom_text_fiekd.dart';
 
 class AddNoteButtonSheet extends StatelessWidget {
@@ -14,6 +15,8 @@ class AddNoteButtonSheet extends StatelessWidget {
           CustomTextFiekd(title: 'Title'),
           SizedBox(height: 10),
           CustomTextFiekd(title: 'Description', maxLine: 5),
+          SizedBox(height: 50),
+          CustomButtom(onTap: () {}),
         ],
       ),
     );
