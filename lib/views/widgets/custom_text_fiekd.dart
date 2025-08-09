@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 
-class CustomTextFiekd extends StatelessWidget {
-  const CustomTextFiekd({super.key, required this.title, this.maxLine = 1});
+class CustomTextFieled extends StatelessWidget {
+  const CustomTextFieled.CustomTextField({
+    super.key,
+    required this.title,
+    this.maxLine = 1,
+  });
   final String title;
   final int maxLine;
   @override

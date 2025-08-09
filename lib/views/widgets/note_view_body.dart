@@ -13,7 +13,11 @@ class NoteViewBody extends StatelessWidget {
       child: Column(
         children: [
           SizedBox(height: 50),
-          CustomAppbar(title: 'NoteApp', icon: Icons.search),
+          CustomAppbar(
+            onPressed: (){
+              
+            },
+            title: 'NoteApp', icon: Icons.search),
           Expanded(
             child: Padding(
               padding: const EdgeInsets.symmetric(vertical: 16),

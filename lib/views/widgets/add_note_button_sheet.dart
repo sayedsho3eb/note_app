@@ -12,9 +12,9 @@ class AddNoteButtonSheet extends StatelessWidget {
       child: Column(
         children: [
           SizedBox(height: 50),
-          CustomTextFiekd(title: 'Title'),
+          CustomTextFieled.CustomTextField(title: 'Title'),
           SizedBox(height: 10),
-          CustomTextFiekd(title: 'Description', maxLine: 5),
+          CustomTextFieled.CustomTextField(title: 'Description', maxLine: 5),
           SizedBox(height: 50),
           CustomButtom(onTap: () {}),
         ],
