@@ -24,7 +24,7 @@ class NoteIteam extends StatelessWidget {
                 'Make your carrer With Sayedshoieb ',
                 style: TextStyle(
                   color: Colors.black.withAlpha(100),
-                  fontSize: 16,
+                  fontSize: 18,
                 ),
               ),
 
@@ -33,7 +33,7 @@ class NoteIteam extends StatelessWidget {
                 icon: Icon(Icons.delete, color: Colors.black, size: 32),
               ),
             ),
-            SizedBox(height: 15),
+            SizedBox(height: 25),
             Padding(
               padding: const EdgeInsets.only(right: 24),
               child: Text(
