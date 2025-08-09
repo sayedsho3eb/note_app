@@ -8,10 +8,10 @@ class NoteIteam extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(8),
-        color: Colors.yellowAccent,
+        color: Color(0xffF0F465),
       ),
       child: Padding(
-        padding: const EdgeInsets.only(top: 16, bottom: 16, left: 16),
+        padding: const EdgeInsets.only(top: 32, bottom: 32, left: 32),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
