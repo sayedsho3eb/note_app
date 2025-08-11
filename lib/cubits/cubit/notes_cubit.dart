@@ -13,7 +13,6 @@ class NotesCubit extends Cubit<NotesState> {
     var notBox = await Hive.box<NoteModel>(kNotebox);
 
     notes = notBox.values.toList();
-
-    
+    emit(NotesSuccess());
   }
 }
