@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:noteapp/cubits/add_notes_cubit/add_notes_cubit.dart';
-import 'package:noteapp/views/widgets/add_form_key.dart';
+import 'package:noteapp/views/widgets/add_Note_form.dart';
 
 class AddNoteButtonSheet extends StatelessWidget {
   const AddNoteButtonSheet({super.key});
@@ -12,6 +12,7 @@ class AddNoteButtonSheet extends StatelessWidget {
       create: (context) => AddNotesCubit(),
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 16),
+
         child: SingleChildScrollView(
           child: BlocConsumer<AddNotesCubit, AddNotesState>(
             listener: (context, state) {
@@ -22,7 +23,10 @@ class AddNoteButtonSheet extends StatelessWidget {
               }
             },
             builder: (context, state) {
-              return  AddFormKey();
+              return AbsorbPointer(
+                absorbing: state is AddNotesLoading ? true : false,
+                child: AddNoteForm(),
+              );
             },
           ),
         ),
